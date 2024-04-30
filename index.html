@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<title>THE WEBSITE</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+
+<body>
+
+<!--
+<h1 style="color:palegoldenrod;font-family: 'Courier New', Courier, monospace;">KACIAOW</h1>
+-->
+<script>
+    var BUS = new buzz.sound("sound/bus.wav");
+    var TRAIN = new buzz.sound("sound/train.wav");
+    var TRAM = new buzz.sound("sound/tram.wav");
+    var CAR = new buzz.sound("sound/car.wav");
+    var BIKE = new buzz.sound("sound/bike.wav");
+    var WALK = new buzz.sound("sound/walk.wav");
+    var PIN = new buzz.sound("sound/pin.wav");
+    var GO = new buzz.sound("sound/go.wav");
+    var COMPASS = new buzz.sound("sound/compass.wav");
+
+    window.onload = function() {
+        document.getElementById('bus').addEventListener('mouseover', function () {BUS.play();});
+        document.getElementById('train').addEventListener('mouseover', function () {TRAIN.play();});
+        document.getElementById ('tram').addEventListener('mouseover', function () {TRAM.play();});
+        document.getElementById ('car').addEventListener('mouseover', function () {CAR.play();});
+        document.getElementById ('bike').addEventListener('mouseover', function () {BIKE.play();});
+        document.getElementById ('walk').addEventListener('mouseover', function () {WALK.play();});
+        document.getElementById ('pin').addEventListener('mouseover', function () {PIN.play();});
+        document.getElementById ('go').addEventListener('mouseover', function () {GO.play();});
+        document.getElementById ('compass').addEventListener('mouseover', function () {COMPASS.play();});
+    };
+    
+
+</script>
+
+<img id="bus" src="img/bus.png" width="200" onmouseover="bus.width='250';" onmouseout="bus.width='200';"/>
+<img id="train" src="img/train.png" width="200" onmouseover="train.width='250';" onmouseout="train.width='200';"/>
+<img id="tram" src="img/tram.png" width="200" onmouseover="tram.width='250';" onmouseout="tram.width='200';"/>
+<img id="car" src="img/car.png" width="200" onmouseover="car.width='250';" onmouseout="car.width='200';"/>
+<img id="bike" src="img/bike.png" width="150" onmouseover="bike.width='187.5';" onmouseout="bike.width='150';"/>
+<img id="walk" src="img/walk.png" height="200" onmouseover="walk.height='250';" onmouseout="walk.height='200';"/>
+<img id="pin" src="img/pin.png" height="200" onmouseover="pin.height='250';" onmouseout="pin.height='200';"/>
+<img id="go" src="img/go.png" height="200" onmouseover="go.height='250';" onmouseout="go.height='200';"/>
+<img id="compass" src="img/compass.png" height="200" onmouseover="compass.height='250';" onmouseout="compass.height='200';"/>
+
+
+</body>
+
+</html>
