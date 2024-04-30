@@ -5,12 +5,20 @@
 
 <style>
     .row{
-        width: 720px;
-        margin: 100px auto 10px auto ;
+        width: 1000;
+        padding-left: 30;
+        padding-bottom: 30;
     }
     .image-container {
-    display: table-cell; vertical-align: middle;
-    padding: 100px;
+    height: 156.25;
+    display: table-cell; vertical-align: bottom;
+    padding: 10;
+    }
+    .image-container2 {
+    height: 156.25;
+    display: table-cell; vertical-align: bottom;
+    padding: 10;
+    padding-top: 300;
     }
     </style>
 
@@ -29,9 +37,9 @@
     var CAR = new buzz.sound("sound/car.wav");
     var BIKE = new buzz.sound("sound/bike.wav");
     var WALK = new buzz.sound("sound/walk.wav");
-    var PIN = new buzz.sound("sound/pin.wav");
-    var GO = new buzz.sound("sound/go.wav");
-    var COMPASS = new buzz.sound("sound/compass.wav");
+    var COMPASS = new buzz.sound("sound/pin.wav");
+    var PIN = new buzz.sound("sound/go.wav");
+    var GO = new buzz.sound("sound/compass.wav");
 
     window.onload = function() {
         document.getElementById('bus').addEventListener('mouseover', function () {BUS.play();});
@@ -48,18 +56,21 @@
 
 </script>
 
-<div>
-<div><img id="bus" src="img/bus.png" width="200" onmouseover="bus.width='250';" onmouseout="bus.width='200';"/></div>
-<div><img id="train" src="img/train.png" width="200" onmouseover="train.width='250';" onmouseout="train.width='200';"/></div>
-<div><img id="tram" src="img/tram.png" width="200" onmouseover="tram.width='250';" onmouseout="tram.width='200';"/></div>
+<div class="row">
+    <div class="image-container"><img id="walk" src="img/walk.png" height="100" onmouseover="walk.height='125';" onmouseout="walk.height='100';"/></div>
+    <div class="image-container"><img id="bike" src="img/bike.png" width="125" onmouseover="bike.width='156.25';" onmouseout="bike.width='125';"/></div>
+    <div class="image-container"><img id="car" src="img/car.png" width="190" onmouseover="car.width='237.5';" onmouseout="car.width='190';"/></div>
+    <div class="image-container"><img id="bus" src="img/bus.png" width="200" onmouseover="bus.width='250';" onmouseout="bus.width='200';"/></div>
+    <div class="image-container"><img id="train" src="img/train.png" width="200" onmouseover="train.width='250';" onmouseout="train.width='200';"/></div>
+    <div class="image-container"><img id="tram" src="img/tram.png" width="200" onmouseover="tram.width='250';" onmouseout="tram.width='200';"/></div>
 </div>
-<div><img id="car" src="img/car.png" width="200" onmouseover="car.width='250';" onmouseout="car.width='200';"/>
-<img id="bike" src="img/bike.png" width="150" onmouseover="bike.width='187.5';" onmouseout="bike.width='150';"/>
-<img id="walk" src="img/walk.png" height="200" onmouseover="walk.height='250';" onmouseout="walk.height='200';"/>
-</div><img id="pin" src="img/pin.png" height="200" onmouseover="pin.height='250';" onmouseout="pin.height='200';"/>
-<img id="go" src="img/go.png" height="200" onmouseover="go.height='250';" onmouseout="go.height='200';"/>
-<img id="compass" src="img/compass.png" height="200" onmouseover="compass.height='250';" onmouseout="compass.height='200';"/>
-
+<div class="row">
+<img id="go" src="img/go.png" height="125" onmouseover="go.height='156.25';" onmouseout="go.height='125';"/>
+</div>
+<div class="row">
+    <div class="image-container2"><img id="pin" src="img/pin.png" height="125" onmouseover="pin.height='250';" onmouseout="pin.height='200';"/></div>
+    <div class="image-container2"><img id="compass" src="img/compass.png" height="125" onmouseover="compass.height='250';" onmouseout="compass.height='200';"/></div>
+</div>
 
 </body>
 
